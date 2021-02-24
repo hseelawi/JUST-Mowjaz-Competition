@@ -24,13 +24,22 @@ def generic_error_response(code, message, headers=None):
 
 @app.route("/classify", methods=["GET", "POST"])
 def classify():
-    text = request.args["text"]
+    if request.method == 'GET':
+        text = request.args["text"]
+    else:
+        payload = request.get_json()
+        text = payload.get('text', '')
+
     return jsonify({"status": "success", "results": classifier.classify(text)}), 200
 
 
 @app.route("/dl_classify", methods=["GET", "POST"])
 def dl_classify():
-    text = request.args["text"]
+    if request.method == 'GET':
+        text = request.args["text"]
+    else:
+        payload = request.get_json()
+        text = payload.get('text', '')
     return jsonify({"status": "success", "results": classifier.dl_model_classify(text)}), 200
 
 
