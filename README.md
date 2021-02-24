@@ -1,6 +1,6 @@
 # Mowjaz Multi-Topic Labelling Task
 
-<img src="images/Mowjaz.jpeg" alt="Competition Official Logo" width="100" height="10" align="center">
+<img src="logo/Mowjaz.jpeg" alt="Competition Official Logo" width="100" height="10" align="center">
 
 This repo contains the code required to reproduce the baselines for the Mowjaz Multi-Topic Labelling Task. To access the page of the competition on the Jordan University of Science and Technology website you can use this [link](https://www.just.edu.jo/icics/icics2021/com/Task%20Description.html). Here you can find general information about the competition. For participating you need to access the competition website as hosted on codalab, via this [link](https://competitions.codalab.org/competitions/29220). Here you can make submissions to the competition and view the leaderboard.
 
