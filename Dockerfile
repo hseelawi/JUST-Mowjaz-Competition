@@ -26,7 +26,7 @@ WORKDIR "$APP_DIR"
 ADD . "$APP_DIR/"
 # will be removed when we use the final model
 ENV ARAVEC='https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_sg_300_twitter.zip'
-RUN /bin/bash ARAVEC.sh
+RUN /bin/bash aravec.sh
 RUN pip3 install --no-cache-dir --upgrade --requirement "$APP_DIR/requirements.txt"
 
 ## RUN APP
