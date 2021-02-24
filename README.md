@@ -5,7 +5,7 @@
 This repo contains the code required to reproduce the baselines for the Mowjaz Multi-Topic Labelling Task. To access the page of the competition on the Jordan University of Science and Technology website you can use this [link](https://www.just.edu.jo/icics/icics2021/com/Task%20Description.html). Here you can find general information about the competition. For participating you need to access the competition website as hosted on codalab, via this [link](https://competitions.codalab.org/competitions/29220). Here you can make submissions to the competition and view the leaderboard.
 
 ## Reproducing the Baselines
-To reproduce the baselines, you need first to clone this repo to your machine using the following command. In the root directory of your clone of the repo, and in order to install the required packages you need to run the following commands (this assumes that you are working on a modern linux distro that has python3):
+To reproduce the baselines, you need first to clone this repo to your machine. In the root directory of your clone of the repo, and in order to install the required packages you need to run the following commands (this assumes that you are working on a modern linux distro that has python3):
 ```bash
 python3 -m venv env
 source env/bin/activate
