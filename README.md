@@ -18,6 +18,12 @@ Once the above steps have been accomplished successfully, you need to switch int
 
 For running the SVC baseline, you need to run the `SVC_baseline.ipynb` and follow the same steps. An identical file to the one produced from the step before will be found in the same directory.
 
+Please ensure that you zip your submission before uploading it to the competition page on codalab. This can be done on a unix/linux system as follows:
+
+```
+zip submission.zip answer.tsv
+```
+
 ## API
 This repo comes with an API wrapper developed for educational purposes. This requires that you have both models saved in their right directories (this will be achieved anyway if you have run both notebooks from the section above successfully. To start the API, you need to run `start_microservice`, then in a separate tap you can query either model via their respective route (i.e for the classical model, you can use `/classify` whereas for the deep learning one you can use `/dl_classify`. Below is an example of a `POST` request and its response using the `/classify` route:
 
